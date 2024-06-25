@@ -1,0 +1,10 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform/
+terraform.tfvars
+
+# Ignore editor-specific files
+.vscode/
+.idea/
