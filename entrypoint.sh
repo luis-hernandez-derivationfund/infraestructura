@@ -5,12 +5,12 @@ init_terraform() {
 }
 
 apply_infrastructure() {
-    terraform plan -var-file=terraform.tfvars
-    terraform apply -var-file=terraform.tfvars -auto-approve
+    terraform plan -var-file=environments/dev/dev.tfvars
+    terraform apply -var-file=environments/dev/dev.tfvars -auto-approve
 }
 
 destroy_infrastructure() {
-    terraform destroy -var-file=terraform.tfvars -auto-approve
+    terraform destroy -var-file=environments/dev/dev.tfvars -auto-approve
 }
 
 case "$1" in
