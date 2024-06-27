@@ -22,7 +22,7 @@ jobs:
       run: docker build -t infraestructura .
 
     - name: Build Docker image
-      run:  docker run --rm -v $(pwd):/workspace -w /workspace terraform-project init 
+      run:  docker run --rm -v $(pwd):/workspace -w /workspace infraestructura init 
 
     - name: Run Terraform apply
       run: docker run --rm -v $(pwd):/workspace -w /workspace infraestructura apply -auto-approve
