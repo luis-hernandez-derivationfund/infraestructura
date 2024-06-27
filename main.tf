@@ -26,7 +26,7 @@ resource "aws_instance" "test_medium" {
   }
 }
 
-resource "aws_instance_small" "test_medium" {
+resource "aws_instance" "test_small" {
   ami           = var.ami_id
   instance_type = var.instance_type
   user_data     = <<-EOF
