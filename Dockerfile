@@ -15,5 +15,3 @@ RUN chmod +x /workspace/entrypoint.sh
 RUN terraform init && \
     terraform fmt && \
     terraform validate
-
-ENTRYPOINT ["/workspace/entrypoint.sh"]
