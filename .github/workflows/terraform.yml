@@ -25,7 +25,7 @@ jobs:
       run:  docker run --rm -v $(pwd):/workspace -w /workspace infraestructura init 
 
     - name: Run Terraform apply
-      run: docker run --rm -v $(pwd):/workspace -w /workspace infraestructura apply -auto-approve
+      run: docker run --rm -v $(pwd):/workspace -w /workspace infraestructura apply -var-file=terraform.tfvars -auto-approve
 
     - name: Run Terraform destroy
-      run: docker run --rm -v $(pwd):/workspace -w /workspace infraestructura destroy -auto-approve
+      run: docker run --rm -v $(pwd):/workspace -w /workspace infraestructura destroy -var-file=terraform.tfvars -auto-approve
