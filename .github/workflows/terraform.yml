@@ -8,7 +8,7 @@ on:
     branches:
       - main
 jobs:
-  deploy_and_destroy:
+  dd:
     runs-on: ubuntu-latest
 
     steps:
