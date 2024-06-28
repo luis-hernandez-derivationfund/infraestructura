@@ -1,6 +1,6 @@
 region="us-east-1"
-aws_access_key= "AKIA6GBMFYUJCRCWZSJR"
-aws_secret_key= "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"
+aws_access_key= "AKIA47CRYRXJQWXGMPV7"
+aws_secret_key= "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"
 instance_type="t2.small"
 instance_type_medium="t2.medium"
 ami_id="ami-01b799c439fd5516a"
